@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Clocks Dimes=nsion */
+
+#container {
+    margin: auto;
+    background: url(clock.jpg) no-repeat;
+    background-size: 100%;
+    width: 40vw;
+    height: 40vw;
+    position: relative;
+    border: 5px solid rgb(22, 116, 42);
+    border-radius: 6px;
+    mix-blend-mode: multiply;
+}
+
+
+/* Hands position */
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+
+/* Hour hand's size & color */
+
+#hour {
+    background-color: royalblue;
+    width: 7px;
+    height: 123px;
+    top: 27%;
+    left: 49.4%;
+}
+
+
+/*Minute hand's size & color */
+
+#minute {
+    background-color: greenyellow;
+    width: 7px;
+    height: 164px;
+    top: 20%;
+    left: 49.4%;
+}
+
+
+/* Second hand's size & color */
+
+#second {
+    background-color: red;
+    width: 4px;
+    height: 185px;
+    top: 16%;
+    left: 49.7%;
+}
+
+@media only screen and (max-width: 960px) {
+    #container {
+        width: 98vw;
+        top: 41vw;
+        position: absolute;
+        height: 98vw;
+    }
+}

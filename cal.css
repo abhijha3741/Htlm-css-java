@@ -1,0 +1,40 @@
+.button {
+    margin: 2px;
+    padding: 2px;
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+    border-color: black;
+    background: transparent;
+    outline: none;
+}
+
+.textview {
+    width: 80%;
+    font-size: 14px;
+    color: black;
+    border-color: black;
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+    opacity: 0.6;
+}
+
+body {
+    background: linear-gradient(to right, red, blue);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    margin-top: 16%;
+    box-shadow: 0 0 20px, 0 0 20px;
+}
+
+@media only screen and (max: 960px) {
+    body {
+        height: 200px;
+    }
+}
